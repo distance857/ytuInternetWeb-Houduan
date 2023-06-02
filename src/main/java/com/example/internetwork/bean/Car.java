@@ -8,6 +8,7 @@ public class Car {
     private Integer num;
     private String pid;
     private String uid;
+    private Integer price;
 
     public Car() {
     }

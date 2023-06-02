@@ -14,7 +14,7 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping("/getProduct")
-    public Product getProduct(@RequestBody Product product){
-        return productService.getProduct(product.getId());
+    public Product getProduct(@RequestParam("id") Integer id){
+        return productService.getProduct(id);
     }
 }

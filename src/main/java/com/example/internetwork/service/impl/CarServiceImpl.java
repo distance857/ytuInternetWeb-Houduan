@@ -25,5 +25,10 @@ public class CarServiceImpl implements CarService {
         return carMapper.deleteCar(id);
     }
 
+    @Override
+    public Boolean createCar(Car car) {
+        return carMapper.createCar(car);
+    }
+
 
 }

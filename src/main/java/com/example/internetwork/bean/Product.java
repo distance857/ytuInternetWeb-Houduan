@@ -9,9 +9,9 @@ public class Product {
     private String title;
     private String sell_point;
     private String item_type;
-    private double price;
+    private Integer price;
 
-    public Product(Integer num, String title, String sell_point, String item_type, double price) {
+    public Product(Integer num, String title, String sell_point, String item_type, Integer price) {
         this.num = num;
         this.title = title;
         this.sell_point = sell_point;

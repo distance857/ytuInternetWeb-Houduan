@@ -17,19 +17,23 @@ public class CarController {
     private CarService carService;
 
     @GetMapping("/getCars")
-    public ArrayList<CarDto> getCars() { return carService.getCars();};
+    public ArrayList<CarDto> getCars() { return carService.getCars();}
 
     @DeleteMapping("/deleteCar")
     public Boolean deleteCar(@RequestBody CarDto carDto) {
         return carService.deleteCar(carDto.getCid());
-    };
+    }
 
     @DeleteMapping("/deleteCars")
     public void deleteCars(@RequestBody ArrayList<CarDto> carDtos) {
         for (CarDto carDto: carDtos) {
             carService.deleteCar(carDto.getCid());
         }
-    };
+    }
 
+    @PostMapping("/createCar")
+    public Boolean createCar(@RequestBody Car car){
+        return carService.createCar(car);
+    }
 
 }
