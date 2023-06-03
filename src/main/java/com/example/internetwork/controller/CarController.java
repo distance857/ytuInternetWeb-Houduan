@@ -17,7 +17,7 @@ public class CarController {
     private CarService carService;
 
     @GetMapping("/getCars")
-    public ArrayList<CarDto> getCars() { return carService.getCars();}
+    public ArrayList<CarDto> getCars(@RequestParam("uid") Integer uid) { return carService.getCars(uid);}
 
     @DeleteMapping("/deleteCar")
     public Boolean deleteCar(@RequestBody CarDto carDto) {

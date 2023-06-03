@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public interface CarService {
 
-    ArrayList<CarDto> getCars();
+    ArrayList<CarDto> getCars(Integer uid);
 
     Boolean deleteCar(String id);
 

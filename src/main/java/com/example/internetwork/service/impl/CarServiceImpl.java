@@ -16,8 +16,8 @@ public class CarServiceImpl implements CarService {
     private CarMapper carMapper;
 
     @Override
-    public ArrayList<CarDto> getCars() {
-        return carMapper.getCars();
+    public ArrayList<CarDto> getCars(Integer uid) {
+        return carMapper.getCars(uid);
     }
 
     @Override
