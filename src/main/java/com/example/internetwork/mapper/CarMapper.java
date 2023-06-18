@@ -1,6 +1,6 @@
 package com.example.internetwork.mapper;
 
-import com.example.internetwork.bean.Car;
+import com.example.internetwork.entity.Car;
 import com.example.internetwork.dto.CarDto;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;

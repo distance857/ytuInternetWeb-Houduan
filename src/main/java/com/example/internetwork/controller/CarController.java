@@ -1,6 +1,6 @@
 package com.example.internetwork.controller;
 
-import com.example.internetwork.bean.Car;
+import com.example.internetwork.entity.Car;
 import com.example.internetwork.dto.CarDto;
 import com.example.internetwork.service.CarService;
 import jakarta.annotation.Resource;

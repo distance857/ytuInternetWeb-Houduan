@@ -1,4 +1,4 @@
-package com.example.internetwork.bean;
+package com.example.internetwork.entity;
 
 import lombok.Data;
 

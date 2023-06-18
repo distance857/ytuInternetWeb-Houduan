@@ -1,6 +1,6 @@
 package com.example.internetwork.service;
 
-import com.example.internetwork.bean.Car;
+import com.example.internetwork.entity.Car;
 import com.example.internetwork.dto.CarDto;
 
 import java.util.ArrayList;

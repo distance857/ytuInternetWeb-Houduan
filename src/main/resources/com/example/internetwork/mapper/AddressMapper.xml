@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.internetwork.mapper.AddressMapper">
+    <!--List<Address> getDefaultAddress(Integer uid);-->
+    <select id="getDefaultAddress" resultType="com.example.internetwork.entity.Address">
+        select *
+        from t_address
+        where uid = #{uid}
+    </select>
+    <!--void insertAddress(@Param("address") Address address1);-->
+    <insert id="insertAddress" parameterType="com.example.internetwork.entity.Address">
+        insert into t_address(uid, name, province_name, province_code, city_name, city_code, area_name, area_code, address, phone,
+        is_default, created_time)
+        VALUES (#{address.uid},
+        #{address.name},
+        #{address.provinceName},
+        #{address.provinceCode},
+        #{address.cityName},
+        #{address.cityCode},
+        #{address.areaName},
+        #{address.areaCode},
+        #{address.address},
+        #{address.phone},
+        #{address.isDefault},
+        #{address.createdTime});
+
+    </insert>
+</mapper>
